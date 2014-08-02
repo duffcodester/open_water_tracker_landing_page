@@ -1,1 +1,178 @@
 @import "bootstrap";
+
+h1, h2, h4, ul, b, strong, li, p { font-family: 'Roboto', sans-serif; font-weight: 400; }
+
+.information {
+  text-align:left;
+}
+
+#mobile_fix {
+  height: 650px;
+  background-color: #F4F4F4;
+}
+
+#sub-header {
+  position: absolute;
+  top: 80px;
+}
+
+#email {
+    border-style: dotted;
+    border-width: 2px;
+    height: 35px;
+    position: relative;
+    bottom: 17px;
+    background-color: white;
+}
+
+img {
+   border:1px solid #021a40;
+}
+
+@media (min-width: 767px) {
+
+  #section_1 {
+    height: 325px;
+    background-color: #F4F4F4;
+  }
+
+  #section_2 {
+    height: 860px;
+    background-color: #F4F4F4;
+  }
+
+  #section_3 {
+    height: 225px;
+    background-color: #F4F4F4;
+  }
+
+  #section_4_header {
+    height: 60px;
+    background-color: #4184F3;
+  }
+
+  #section_4_body {
+    height: 165px;
+    background-color: #C5D9FB;
+  }
+
+  #body {
+    height: 1400px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  #content {
+  margin-left: 15%;
+  margin-right:15%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  #section_1 {
+    height: 675px;
+    background-color: #F4F4F4;
+  }
+
+  #section_2 {
+    height: 1260px;
+    background-color: #F4F4F4;
+  }
+
+  #section_3 {
+    height: 390px;
+    background-color: #F4F4F4;
+  }
+
+  #section_4_header {
+    height: 60px;
+    background-color: #4184F3;
+  }
+
+  #section_4_body {
+    height: 165px;
+    background-color: #C5D9FB;
+  }
+
+  #body {
+    height: 2950px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  #content {
+    margin-left: 11%;
+    margin-right:11%;
+  }
+}
+
+core-header-panel {
+  height: 280px;
+}
+
+core-header-panel[mode=cover]::shadow #mainContainer {
+  left: 70px;
+}
+
+.core-header {
+  height: 100px;
+  line-height: 100px;
+  font-size: 18px;
+  padding: 0 10px;
+  background-color: #3E50B4;
+  color: #FFF;
+  transition: height 0.2s;
+}
+
+.core-header.tall {
+  height: 280px;
+}
+
+#sub-header {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+core-header-panel[mode=cover]::shadow {
+    left: 80px;
+  }
+
+#my-button {
+    background: #4285f4;
+    color: #fff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #F9F9F9;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #D8524E;
+}
+
+core-toolbar {
+  background-color: #3F51B5;
+  height: 100px;
+}
+
+core-header-panel {
+  height: 100%;
+}

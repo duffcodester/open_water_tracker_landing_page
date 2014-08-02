@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html ng-app="OWT">
-<head>
-  <title>Polymer Rails Example</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= html_import_tag 'application'%>
-  <%= csrf_meta_tags %>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
-
-  <%= yield %>
-
-</body>
+<html>
+  <head>
+    <title>Open Water Tracker</title>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= html_import_tag 'application'%>
+    <%= csrf_meta_tags %>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Open Water Tracker for USMS branches'>
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
 </html>
