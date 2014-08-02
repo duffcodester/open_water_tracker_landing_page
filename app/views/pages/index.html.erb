@@ -1,0 +1,237 @@
+<core-header-panel mode="waterfall-tall" tallClass="tall" fit>
+  <div class="core-header">
+    <h1> Open Water Tracker </h1>
+    <h4> An elegant web app for tracking open water USMS swimmers. </h4>
+  </div>
+
+  <div id="body">
+    <div id="section_1">
+      <div id='content'>
+        <br><br>
+        <center>
+          <h2> Keep track of swimmers and analytics in real time </h2>
+          <br>
+          <div class='row'>
+            <div class='col-md-4'>
+              <i class="fa fa-cloud fa-5x"></i><br>
+              <h4>Cloud Based</h4><br>
+              <p>Never lose records again<p>
+            </div>
+            <div class='col-md-4'>
+              <i class="fa fa-mobile fa-5x"></i><br>
+              <h4>Multi-platform</h4><br>
+              <p>Works on any device<p>
+            </div>
+            <div class='col-md-4'>
+              <i class="fa fa-bar-chart-o fa-5x"></i><br>
+              <h4>Robust Analytics</h4><br>
+              <p>Gain insights about your branch<p>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+
+    <div id="section_2">
+      <div id='content'>
+        <br><br>
+        <center>
+          <h2> How does it look? </h2>
+          <br>
+          <div class='row'>
+            <div class='col-md-4'>
+              <h4> Check In </h4>
+              <p>
+                Search swimmers by last name in the USMS database. Collect
+                Swimmer Phone Numbers for your records.
+              </p>
+              <%= image_tag("/images/check_in.png", alt: 'Check In', width:"90%", height:"90%") %>
+            </div>
+            <div class='col-md-4'>
+              <h4> Check Out </h4>
+              <p>
+                Check out swimmers with the click of a button. Either scroll
+                down on the list or search by last name.
+              <%= image_tag("/images/check_out.png", alt: 'Check Out', width:"90%", height:"90%") %>
+
+            </div>
+            <div class='col-md-4'>
+              <h4> Analytics </h4>
+              <p>
+                Track total number of swimmers, unique sessions per swimmers,
+                and measure participation by season.
+              <%= image_tag("/images/analytics.png", alt: 'Analytics', width:"90%", height:"90%") %>
+
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+
+    <div id="section_3">
+      <div id='content'>
+        <br><br>
+        <center>
+          <h2>Try the Open Water Tracker demo today. Don't regret tomorrow. </h2>
+          <br>
+          <core-input id='email' placeholder="Enter your email here for more information."></core-input>
+          <paper-button id='my-button' label="Send me info now"></paper-button>
+        </center>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <div id="section_4_body">
+      <div id='content'>
+        <br><br>
+          <b>
+            Affektive Software Solutions </br>
+            720-387-9691 </br>
+            info@affektive.com </br>
+            Denver, CO
+          </b>
+      </div>
+    </div>
+
+    <div id="section_4_header">
+      <div id='content'>
+        <br>
+        <p style='color: white'>&#169; 2013-2014 Affektive Software LLC</p>
+      </div>
+    </div>
+
+
+
+
+</core-header-panel>
+
+
+
+<style>
+/* Style #my-button blue with white text and darker blue ink. */
+
+#email {
+      border-style: dotted;
+    border-width: 2px;
+    height: 35px;
+    position: relative;
+    bottom: 17px;
+    background-color: white;
+}
+
+img {
+   border:1px solid #021a40;
+}
+
+#section_1 {
+  height: 325px;
+  background-color: #F4F4F4;
+}
+
+#section_2 {
+  height: 850px;
+  background-color: #F4F4F4;
+}
+
+#section_3 {
+  height: 225px;
+  background-color: #F4F4F4;
+}
+
+#section_4_header {
+  height: 60px;
+  background-color: #4184F3;
+}
+
+#section_4_body {
+  height: 165px;
+  background-color: #C5D9FB;
+}
+
+core-header-panel {
+  height: 280px;
+}
+
+core-header-panel[mode=cover]::shadow #mainContainer {
+  left: 70px;
+}
+
+.core-header {
+  height: 100px;
+  line-height: 100px;
+  font-size: 18px;
+  padding: 0 10px;
+  background-color: #3E50B4;
+  color: #FFF;
+  transition: height 0.2s;
+}
+
+.core-header.tall {
+  height: 280px;
+}
+
+#body {
+  height: 1400px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#content {
+  margin-left: 22%;
+  margin-right:22%;
+}
+
+#sub-header {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+core-header-panel[mode=cover]::shadow {
+    left: 80px;
+  }
+
+#my-button {
+    background: #4285f4;
+    color: #fff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #F9F9F9;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #D8524E;
+}
+
+core-toolbar {
+  background-color: #3F51B5;
+  height: 100px;
+}
+
+core-header-panel {
+  height: 100%;
+}
+
+
+</style>
