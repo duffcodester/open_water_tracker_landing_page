@@ -2,9 +2,20 @@
 
 h1, h2, h4, ul, b, strong, li, p { font-family: 'Roboto', sans-serif; font-weight: 400; }
 
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #D8524E;
+}
+
 .information {
   text-align:left;
 }
+
+
+
 
 #mobile_fix {
   height: 650px;
@@ -160,13 +171,7 @@ body {
   -webkit-touch-callout: none;
 }
 
-h1 {
-  color: white;
-}
 
-h2 {
-  color: #D8524E;
-}
 
 core-toolbar {
   background-color: #3F51B5;
