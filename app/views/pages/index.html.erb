@@ -1,10 +1,4 @@
-<core-header-panel mode='waterfall-tall' tallClass='tall' fit>
-  <div class="core-header">
-    <h1> Open Water Tracker </h1>
-    <h3 id='sub-header'> An elegant web app for tracking open water USMS swimmers. </h3>
-  </div>
-
-  <div id='body'>
+<div id='body'>
     <div id='section_1'>
       <div id='content'>
         <br><br>
@@ -38,81 +32,98 @@
       <div id='content'>
         <br><br>
         <center>
-          <h2 style='color:#D8524E'> How does it look? </h2>
+          <h2 style='color:#D8524E'> What does it do? </h2>
           <br>
           <div class='row'>
-            <div class='col-md-4'>
-              <h4> Check In </h4>
+            <div class='col-sm-4'>
+              <center>
+                <h4>Check In </h4>
+              </center>
               <p class='information'>
-                Search swimmers by last name in the USMS database. Collect
-                Swimmer Phone Numbers for your records.
+                Open Water Tracker can be used with the USMS database for your
+                state or a custom setup database of members. Easily search
+                swimmers by last name to check in. You can check in swimmers
+                with a single click of a button and collect additional
+                information such as swimmer phone numbers.
               </p>
-              <%= image_tag('/images/check_in.png', alt: 'Check In', width:'225px;') %>
             </div>
-            <div class='visible-xs'><br></div>
-            <div class='col-md-4'>
-              <h4> Check Out </h4>
-              <p class='information'>
-                Check out swimmers with the click of a button. Either scroll
-                down on the list or search by last name.
-              </p>
-              <%= image_tag('/images/check_out.png', alt: 'Check Out', width:'225px;') %>
+            <div class='col-sm-4'>
+              <center>
+                <h4>Check Out </h4>
+              </center>  <p class='information'>
+               Check out swimmers with a ease by either sorting the list of
+               who is still in the water, searching by last name, or scrolling
+               down on the list. The days of searching through stacks of paper
+               are over.
+               </p>
             </div>
-            <div class='visible-xs'><br></div>
-            <div class='col-md-4'>
-              <h4> Analytics </h4>
-              <p class='information'>
-                Track total number of swimmers, unique sessions per swimmers,
-                and measure participation by season.
-              </p>
-              <%= image_tag('/images/analytics.png', alt: 'Analytics', width:'225px;') %>
+            <div class='col-sm-4'>
+              <center>
+                <h4> Analytics </h4>
+              </center> <p class='information'>
+                Track the total number of swims, unique swims per swimmer, and
+                create a report about your open water attendance. All records
+                are exportable into CSV for Windows or Mac access.
+               </p>
             </div>
           </div>
         </center>
       </div>
     </div>
 
-    <div class='visible-xs' id='mobile_fix'></div>
 
     <div id='section_3'>
       <div id='content'>
         <br><br>
-        <center class='hidden-xs'>
-          <h2 style='color:#D8524E'>Try the Open Water Tracker demo today. Don't regret tomorrow. </h2>
+        <center>
+          <h2 style='color:#D8524E'> How does it look? </h2>
           <br>
-          <core-input id='email' placeholder='Enter your email here for more information.'></core-input>
-          <paper-button id='my-button' label='Send me info now'></paper-button>
+            <div class='hidden-xs'>
+              <%= image_tag('/images/check_in_mac.png', alt: 'Check In', width:'500px;') %>
+            </div>
+            <div class='visible-xs'>
+              <%= image_tag('/images/check_in_mac.png', alt: 'Check In', width:'300px;') %>
+            </div>
         </center>
-        <center class='visible-xs'>
-          <h2 style='color:#D8524E'>Try the Open Water Tracker demo today. Don't regret tomorrow. </h2>
-          <br>
-          <input id='email' placeholder='Enter your email here. '></input><br>
-          <button class='btn btn-large btn-info'>Send me info now</button>
+      </div>
+    </div>
+
+    <div id='section_4'>
+      <div id='content'>
+        <br><br>
+        <center class='hidden-xs'>
+          <h2 style='color:#D8524E'>Want to get on the waiting list? Sign up for updates today!</h2>
+          <div id="mc_embed_signup">
+          <form action="//openwatertracker.us8.list-manage.com/subscribe/post?u=d667d616340e0ed641f98b42f&amp;id=b8b00b8f06" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_d667d616340e0ed641f98b42f_b8b00b8f06" tabindex="-1" value=""></div>
+              <input type="submit" value="Send me more information" name="subscribe" id="mc-embedded-subscribe" class="button">
+          </form>
+          </div>
         </center>
       </div>
     </div>
   </div>
 
-  <div id='section_4_body'>
+  <div id='section_5'>
     <div id='content'>
       <br><br>
         <b>
-          Affektive Software Solutions </br>
+          Affektive Software LLC </br>
           Denver, CO </br>
-          720-387-9691 </br>
-          info@affektive.com </br>
-          <a href='http://www.affektive.com'> Website </a>
+          <a href="tel:+3039218628">Call </a> -
+          <a href="mailto:info@affektive.com">Email - </a>
+          <a href='http://www.affektive.com'>Web</a>
         </b>
     </div>
   </div>
 
-  <div id='section_4_header'>
+  <div id='section_6'>
     <div id='content'>
       <br>
       <p style='color: white'>&#169; 2014 Affektive Software LLC</p>
     </div>
   </div>
-
-</core-header-panel>
 
 <%= render 'pages/google_analytics' %>
