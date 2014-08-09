@@ -30,6 +30,7 @@ gem 'polymer-rails', '~> 0.1.8'
 gem 'polymer-core-rails'
 gem 'polymer-paper-rails'
 gem "font-awesome-rails"
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'sqlite3'
